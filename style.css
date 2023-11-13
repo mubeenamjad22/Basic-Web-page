@@ -1,0 +1,165 @@
+
+    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    /* color: red; */
+}
+
+
+    html{
+        min-width: 100%;
+        min-height: 100vh;
+        font-size: 62.5%;
+        background-color:#F0F2F5;
+    }
+
+    
+/* ---------------------making mini web-page Start-------------------------- */
+
+ .container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+ }
+ .item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+ .para{
+    height: 10px;
+ }
+
+ .para h1{
+    color: red;
+    font-size: 3.9rem;
+    font-variant: small-caps;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    /* border: 5px solid red;  */
+     /* border-top: 5px solid red; */
+    /* border-bottom: 5px solid red; */
+    /* border-left: 5px solid yellow; */
+    /* border-right: 5px solid yellow;  */
+    /* border-block: 5px solid red; */ 
+    /* border-inline: 5px solid yellow;*/
+    text-shadow: 1px 1px 5px red;
+    margin-top: 20%;
+ }
+
+ .para p{
+    color: whitesmoke;
+    font-size: 1.9rem;
+    font-variant: small-caps;
+    font-weight: 600;
+     text-shadow: 1px 1px 2px black; 
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 20px;
+    margin-left: 60px;
+    padding: 10px;
+    border: 0px solid red;
+ }
+ .item .img img{
+    width: 60%;
+    margin-top: 22%;
+    margin-left: 200px;
+    /* border: 2px solid red;*/
+    border-radius: 50px;
+    transition: all 2s ease;
+    animation: img-animation 0.4s ease reverse;
+ }
+ @keyframes img-animation{
+    from{
+        translate: 0 0%;
+    }
+    to{
+        translate: 0 100%;
+    }
+ }
+
+ .button{
+    display: inline-block;
+    margin-top: 10px; 
+    margin-left: 75px;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 130px;
+    border: 0px solid red;
+    transition: all 1s ease;
+    & a{
+        color: black;
+        font-weight: 500;
+        text-decoration: none
+    }
+ }
+
+ .button:hover{
+    width: 150px;
+    & a:hover{
+        color: red;
+    }
+ }
+
+ .nav .navbar{
+    & ul{
+    gap: 20px;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 700;
+    justify-content: end;
+    }
+    & li{
+        margin-top: 15px;
+        margin-right: 40px;
+    }
+ }
+ li:hover{
+    color: red;
+ }
+
+ .container h1::selection{
+    color: white;
+    background-color: rgba(255,0,0,0.5);;
+ }
+
+ 
+ .container p::selection{
+    color: white;
+    background-color: rgba(255,0,0,0.5);
+ }
+
+ 
+ .container a::selection{
+    color: white;
+    background-color: rgba(255,0,0,0.5);
+ }
+ .img img:hover{
+    scale: 1.1;
+ } 
+ .logo img{
+    width:150px;
+    position: relative;
+    right: 500px;
+    /* border: 2px solid black;*/
+ }
+ span::selection{
+    color: white;
+    background-color: rgba(255,0,0,0.5);
+ } 
+ /* ---------------------making mini web-page End-------------------------- */
+
